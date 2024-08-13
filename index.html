@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - BlazePose-Browser</title>
+  <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8" />
+  <title>BlazePose example</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.26/Tone.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+  <!-- <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/control_utils_3d.js"
+      crossorigin="anonymous"
+    ></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose/pose.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <main>
+    <section>
+      <h1>What Do You Hear?</h1>
+      <button>play</button>
+    </section>
+    <section class="container">
+      <video id="input_video" style="transform: scaleX(-1);
+        display: none;"></video>
+      <canvas id="output_canvas"></canvas>
+      <div class="landmark-grid-container"></div>
+    </section>
+  </main>
+</body>
+<!-- partial -->
+<script src="./script.js"></script>
+
+</body>
+
+</html>
